@@ -1,0 +1,39 @@
+La aplicacion consta de tres partes:
+
+1-La parte cliente (front-end) desarrollado con angular principalmente y nos permite crear,actualizar,consultar(filtros incluidos), y eliminar jugadores.
+
+2-Esta es la parte servidor (back-end) desarrollada con node (express) principalmente, es la que recibe las consultas del front-end y se comunica con la base de datos.
+
+3-La tercera parte es la base de datos, que es necesario instalar y crear tanto la base de datos como la tabla sobre la que se van a crear las consultas.
+
+//SCRIPT//
+CREATE DATABASE jugadores;
+
+USE jugadores;
+
+CREATE TABLE jugadores (
+    id INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(180),
+    posicion VARCHAR(255),
+    equipo VARCHAR(180),
+    nacionalidad VARCHAR(180),
+    imagen VARCHAR(300),
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+// END SCRIPT//
+
+Las 3 partes son imprescindibles para el funcionamiento.
+
+MEJORAS DE LA VERSION:
+
+Esta versión permite la subida de imágenes desde el frontend para su posterior visualización en las tarjetas de los jugadores.
+
+Recursos web:
+Fazt
+Google
+Domini Code
+CarlosAzaustre
+
+Libros:
+Entendiendo Angular (Jorge Cano)
+Introducción a Node (Gustavo Morales)
